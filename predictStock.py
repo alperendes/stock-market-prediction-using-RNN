@@ -9,7 +9,7 @@ import ta
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout
 
-df = pd.read_csv("Apple_June15toJuly19.csv")  #Apple stock prices from January 2017 to July 2019
+df = pd.read_csv("Apple_Jan15toJuly19.csv")  #Apple stock prices from January 2017 to July 2019
 
 df['Date'] = pd.to_datetime(df.Date)
 df.set_index('Date', inplace=True)  #setting an index
